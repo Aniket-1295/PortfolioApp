@@ -1,18 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import NavBar from './components/NavBar'
+import Banner from './components/Banner';
+import Technologies from './components/Technologies';
+import About from './components/About';
+import Experience from './components/Experience';
+import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div>
 
-        <h1>Personal portfolio</h1>
-        
+<div className="portfolio-bg">
+        <div className="main"></div>
+        <NavBar />
+        <Banner />
+        <About/>
+        <Technologies />
+        <Project />
+        <Experience />
+        <Contact />
       </div>
+      
       
     </>
   )
